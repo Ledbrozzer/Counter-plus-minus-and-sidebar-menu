@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Counter e Sidebar</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="sidebar-content">
+            <div id="user">
+                <img src="img/Gojira.png" id="user-avatar" alt="Avatar User">
+
+                <p id="user-infos">
+                    <span class="item-description">
+                        Gojira
+                    </span>
+                    <span class="item-description">
+                        O Homi
+                    </span>
+                </p>
+            </div>
+
+            <ul id="side-items">
+                <li class="side-item active">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="item-description">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">Warriors</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="item-description">Alpha Call</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-box"></i>
+                        <span class="item-description">Skills</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-image"></i>
+                        <span class="item-description">Spots</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-description">Mechanics</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button id="open-btn">
+                <i id="open-btn-icon" class="fa-solid fa-chevron-right"></i>Perfil
+            </button>
+        </div>
+
+        <div id="logout">
+            <button id="logout-btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">
+                    Logout
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="counter">
+        <div>
+            <button id="plus" class="count-button">
+                +
+            </button>
+            <span id="value">
+                0
+            </span>
+            <button id="minus" class="count-button">
+                -
+            </button>
+        </div>
+
+        <button id="reset">
+            Resetar
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
